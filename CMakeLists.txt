@@ -1,39 +1,28 @@
-################# Add include #################
-list(APPEND ADD_INCLUDE 
-        inc_pub
-    )
-list(APPEND ADD_PRIVATE_INCLUDE
-        inc
-    )
-###############################################
+# cmake version
+cmake_minimum_required (VERSION 3.5)
 
-############## Add source files ###############
-list(APPEND ADD_SRCS  
-        src/osal.c
-    )
-###############################################
-
-###### Add required/dependent components ######
-# list(APPEND ADD_REQUIREMENTS component1)
-###############################################
-
-############ Add static libs ##################
-if(CONFIG_OSAL_INCLUDE_STATIC_LIB)
-	#    list(APPEND ADD_STATIC_LIB "lib/libosal.a")
+# sdk path
+if(NOT SDK_PATH)
+    get_filename_component(SDK_PATH ../../ ABSOLUTE)
+    if(EXISTS $ENV{MY_SDK_PATH})
+        set(SDK_PATH $ENV{MY_SDK_PATH})
+    endif()
 endif()
-###############################################
 
-#### Add compile option for this component ####
-#### Just for this component, won't affect other 
-#### modules, including component that depend 
-#### on this component
-list(APPEND ADD_DEFINITIONS_PRIVATE -DAAAAA=1)
+if(NOT EXISTS ${SDK_PATH})
+    message(FATAL_ERROR "SDK path Error, Please set SDK_PATH or MY_SDK_PATH variable")
+endif()
 
-#### Add compile option for this component
-#### and components denpend on this component
-list(APPEND ADD_DEFINITIONS -DAAAAA222=1
-                            -DAAAAA333=1)
-###############################################
+# toolchain
+if(NOT CONFIG_TOOLCHAIN_PATH)
+    if(EXISTS $ENV{MY_TOOLCHAIN_PATH})
+        set(CONFIG_TOOLCHAIN_PATH $ENV{MY_TOOLCHAIN_PATH})
+    endif()
+endif()
 
+# preprocessor definitions for whole project
+add_definitions(-DOSAL_DEFINE=1)
 
-register_component()
+# project name
+include(${SDK_PATH}/tools/cmake/util/project.cmake)
+project(osal)
