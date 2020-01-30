@@ -1,0 +1,7 @@
+menu "OSAL configuration"
+    config OSAL_INCLUDE_STATIC_LIB
+        bool "Enable include static lib(from gcc)"
+        default n
+        help
+        ¦   Enable include static lib(from gcc)
+  endmenu
