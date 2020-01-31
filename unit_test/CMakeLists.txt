@@ -1,26 +1,28 @@
 ############### Add include ###################
 list(APPEND ADD_INCLUDE
-	"inc_pub"
+	"../code/inc_pub"
+    "../code/inc"
     )
 list(APPEND ADD_PRIVATE_INCLUDE "inc")
 ###############################################
 
 ############ Add source files #################
 list(APPEND ADD_SRCS  
-        src/main.c
+        src/ut_main.c
+        ../code/src/main.c
     )
 ###############################################
 
 ###### Add required/dependent components ######
-#if(CONFIG_OSAL_ENABLED)
-#    list(APPEND ADD_REQUIREMENTS OSAL)
-#else()
-#    list(APPEND ADD_REQUIREMENTS )
-#endif()
+if(CONFIG_OSAL_ENABLED)
+    list(APPEND ADD_REQUIREMENTS OSAL)
+else()
+    list(APPEND ADD_REQUIREMENTS )
+endif()
 ###############################################
 
 ############ Add static libs ##################
-# list(APPEND ADD_STATIC_LIB "lib/libcode.a")
+# list(APPEND ADD_STATIC_LIB "../lib/libcode.a")
 ###############################################
 
 #### Add compile option for this component ####

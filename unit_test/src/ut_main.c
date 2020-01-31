@@ -4,6 +4,6 @@
 
 int main()
 {
-    printf("%s: version %d\n", __FUNCTION__, COM_OSAL_UT_VERSION);
+    printf("%s: ut version %d\n", __FUNCTION__, COM_OSAL_UT_VERSION);
     return osal_main();
 }
