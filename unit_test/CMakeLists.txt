@@ -38,4 +38,4 @@ endif()
 ###############################################
 
 include(${SDK_PATH}/tools/cmake/util/register_component.cmake)
-register_component()
+register_component(unit_test)

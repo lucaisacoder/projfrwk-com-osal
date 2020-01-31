@@ -36,4 +36,4 @@ list(APPEND ADD_SRCS
 ###############################################
 
 include(${SDK_PATH}/tools/cmake/util/register_component.cmake)
-register_component()
+register_component(osal)
