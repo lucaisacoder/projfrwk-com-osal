@@ -1,0 +1,8 @@
+/home/share/lworkspace/project/components/osal/build/CMakeFiles/install/strip.dir
+/home/share/lworkspace/project/components/osal/build/CMakeFiles/install/local.dir
+/home/share/lworkspace/project/components/osal/build/CMakeFiles/osal.dir
+/home/share/lworkspace/project/components/osal/build/CMakeFiles/uninstall.dir
+/home/share/lworkspace/project/components/osal/build/CMakeFiles/edit_cache.dir
+/home/share/lworkspace/project/components/osal/build/CMakeFiles/rebuild_cache.dir
+/home/share/lworkspace/project/components/osal/build/CMakeFiles/list_install_components.dir
+/home/share/lworkspace/project/components/osal/build/CMakeFiles/install.dir
