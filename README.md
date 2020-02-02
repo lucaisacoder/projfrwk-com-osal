@@ -1,2 +1,2 @@
-# projfrwk-com-osal
-project framework component osal repo
+# projfrwk-com-log
+project framework component log repo
