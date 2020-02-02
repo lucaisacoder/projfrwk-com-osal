@@ -1,9 +1,0 @@
-#ifndef OSAL_VERSION_
-#define OSAL_VERSION_
-
-#define OSAL_MAJOR_VERSION (0)
-#define OSAL_MINOR_VERSION (1)
-#define OSAL_PATCH_VERSION (0)
-#define OSAL_VERSION "0.1.0"
-
-#endif  // OSAL_VERSION_

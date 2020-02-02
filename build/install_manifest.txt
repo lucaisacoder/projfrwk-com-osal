@@ -1,7 +1,0 @@
-/home/share/lworkspace/project/components/osal/installed/lib/CMake/osal/osalTargets.cmake
-/home/share/lworkspace/project/components/osal/installed/lib/CMake/osal/osalTargets-release.cmake
-/home/share/lworkspace/project/components/osal/installed/include/osal_api.h
-/home/share/lworkspace/project/components/osal/installed/lib/CMake/osal/osalConfig.cmake
-/home/share/lworkspace/project/components/osal/installed/lib/CMake/osal/osalConfigVersion.cmake
-/home/share/lworkspace/project/components/osal/installed/lib/libosal.a
-/home/share/lworkspace/project/components/osal/installed/include/version.h
