@@ -3,7 +3,7 @@ cmake_minimum_required (VERSION 2.8)
 project(osal)
 include(${CMAKE_SOURCE_DIR}/../../tools/cmake/util/SetEnv.cmake)
 
-include(${CMAKE_SOURCE_DIR}/../../tools/cmake/util/print.cmake)
+include(${CMAKE_SOURCE_DIR}/../../tools/cmake/util/Print.cmake)
 
 get_filename_component(SDK_SOURCE_DIR ${CMAKE_SOURCE_DIR}/../../ ABSOLUTE)
 
