@@ -1,7 +1,7 @@
 menu "COM OSAL Configuration"
-    config COM_OSAL_INCLUDE_STATIC_LIB
-        bool "Enable include static lib(from gcc)"
+    config COM_OSAL_DEFINITION
+        bool "Enable COM OSAL Definition"
         default n
         help
-            Enable include static lib(from gcc)
+            Enable COM OSAL Definition
 endmenu
