@@ -53,3 +53,4 @@ set(LIBRARY_TYPE STATIC)
 #set(SOURCES ${SOURCES_UT})
 include(${SDK_SOURCE_DIR}/tools/cmake/util/LibraryConfig.cmake)
 #include(${SDK_SOURCE_DIR}/tools/cmake/util/BinConfig.cmake) #只编译lib，最后link时候再对应生成bin
+include(${SDK_SOURCE_DIR}/tools/cmake/util/Kconfig.cmake) 
