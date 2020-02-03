@@ -11,7 +11,8 @@ class ClassProject:
     _sdk_project_py = ""
 
     def __init__(self):
-        self._project_path = Path.cwd()
+        _cur_path = Path(__file__).parent
+        self._project_path = _cur_path.resolve()
         # get sdk path
         subdir = self._project_path
         cur_path = subdir.parent
