@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "osal.h"
-#include "local_kconfig.h"
-#include "global_kconfig.h"
+//#include "local_kconfig.h"
+//#include "global_kconfig.h"
 
 int osal_api()
 {
